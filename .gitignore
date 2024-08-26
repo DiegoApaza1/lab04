@@ -1,0 +1,52 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.DS_Store
+.idea/assetWizardSettings.xml
+.idea/misc.xml
+.idea/vcs.xml
+.gradle/
+.idea/modules.xml
+.idea/workspace.xml
+
+# Android Studio generated files
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+
+# Keystore files
+*.jks
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+
+# IntelliJ
+out/
+*.ipr
+*.iws
+
+# Unused node_modules folder
+node_modules/
+
+# Files for Android Studio (see https://github.com/github/gitignore/blob/main/Global/Android.gitignore)
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# OS Files
+.DS_Store
+	 
