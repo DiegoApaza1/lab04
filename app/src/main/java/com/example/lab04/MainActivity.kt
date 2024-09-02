@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.lab04.ui.theme.Lab04Theme
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +22,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             Lab04Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ViewHolaCurso(modifier = Modifier.padding(innerPadding))
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
@@ -35,43 +36,16 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hola $name!",
-        modifier = modifier
+        modifier = modifier,
+        color = Color.Blue,  // Cambia el color del texto a azul
+        fontSize = 24.sp  // Cambia el tamaño de la fuente a 24sp
     )
 }
 
 @Preview(showBackground = true)
 @Composable
-fun ViewHolaCurso() {
-    Column(
-        modifier = Modifier
-            .fillMaxWith()
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = "Welcome to the Course!",
-            fontSize = 28.sp,
-            fontWeight = FontWeigh.Bold
-        )
-        Spacer(modifier = Modifier.heigh(16.dp))
-        Text(
-            text = "Hello, Student!",
-            fontSize = 20.xD
-
-    }
-}
-@Preview(showBackground = true)
-@Composable
 fun GreetingPreview() {
     Lab04Theme {
         Greeting("Android")
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun ViewHolaCursoPreview() {
-    Lab04Theme {
-        ViewHolaCurso()
     }
 }
